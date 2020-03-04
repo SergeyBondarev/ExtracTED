@@ -125,8 +125,8 @@ def prune(node):
             else:
                 del node[k]
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     Y = '2013'
     M = '01'
 
@@ -154,3 +154,5 @@ if __name__ == "__main__":
 
                 prune(data)
                 collection.append(data)
+                print(collection)
+                break

@@ -399,7 +399,7 @@ def extract(path):
 
 if __name__ == "__main__":
 
-    os.chdir('/Volumes/WD/S8')
+    # os.chdir('/Volumes/WD/S8')
 
     years = ['2011', '2012', '2013', '2014', '2015', '2016']
     months = ['01', '02', '03', '04', '05', '06', '07', '08',
@@ -411,7 +411,7 @@ if __name__ == "__main__":
         for M in months:
             print(M)
             # Folder containing xml files
-            DIR = os.path.join(os.getcwd(), Y + '-' + M)
+            DIR = os.path.join('../2011/01/20110104_001')
             # List xml files
             files = os.listdir(DIR)
             for f in files:
@@ -419,5 +419,9 @@ if __name__ == "__main__":
                 file_path = os.path.join(DIR, f)
                 try:
                     data = extract(file_path)
+                    print('hey', data)
                 except Exception as e:
                     print(e)
+
+            break
+        break

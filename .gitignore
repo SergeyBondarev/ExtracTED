@@ -2,6 +2,7 @@
 *.xml
 
 .idea/*
+venv/*
 
 old/*
 
